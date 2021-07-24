@@ -1,11 +1,11 @@
-var assert = require('assert')
-var hasOwnProperty = require('./')
+import assert from 'node:assert'
+import hasOwnProperty from './index.js'
 
-var obj = { a: 1, c: 2 }
+const obj = { a: 1, c: 2 }
 
-assert.equal(hasOwnProperty(obj, 'a'), true)
-assert.equal(hasOwnProperty(obj, 'b'), false)
-assert.equal(hasOwnProperty(obj, 'c'), true)
+assert.strictEqual(hasOwnProperty(obj, 'a'), true)
+assert.strictEqual(hasOwnProperty(obj, 'b'), false)
+assert.strictEqual(hasOwnProperty(obj, 'c'), true)
 
-assert.equal(hasOwnProperty(obj, 'toString'), false)
-assert.equal(hasOwnProperty(obj, 'valueOf'), false)
+assert.strictEqual(hasOwnProperty(obj, 'toString'), false)
+assert.strictEqual(hasOwnProperty(obj, 'valueOf'), false)
