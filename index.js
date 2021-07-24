@@ -1,5 +1,5 @@
-var _hasOwnProperty = Object.prototype.hasOwnProperty
+const _hasOwnProperty = Object.prototype.hasOwnProperty
 
-module.exports = function hasOwnProperty (obj, prop) {
-  return _hasOwnProperty.call(obj, prop)
+export default function hasOwnProperty (object, name) {
+  return _hasOwnProperty.call(object, name)
 }

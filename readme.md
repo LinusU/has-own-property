@@ -11,10 +11,20 @@ npm install --save has-own-property
 ## Usage
 
 ```js
-const hasOwnProperty = require('has-own-property')
+import hasOwnProperty from 'has-own-property'
 
 const obj = { a: 1 }
 
 hasOwnProperty(obj, 'a') // true
 hasOwnProperty(obj, 'b') // false
 ```
+
+## API
+
+### `hasOwnProperty(object, name)`
+
+- `object` (`object`, required)
+- `name` (`string | number | symbol`, required)
+- returns `boolean`
+
+Determines whether an object has a property with the specified name.
